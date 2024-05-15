@@ -1,0 +1,31 @@
+site_name: Google Colab e Python
+theme:
+  name: material
+  language: pt
+  font:
+    text: Roboto
+    code: Roboto Mono
+  palette: 
+    - scheme: default
+      media: "(prefers-color-scheme: dark)" # Config para que o default seja atribuido conforme o SO
+      primary: blue
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Alterar para tema escuro
+    - scheme: slate 
+      media: "(prefers-color-scheme: claro)" # Config para que o default seja atribuido conforme o SO
+      primary: blue
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch
+        name: Alterar para tema claro     
+  features: 
+    - content.code.annotate
+    - content.tabs.link
+    - navigation.tabs        # TAB Superior
+    - navigation.top         # Botão para voltar ao topo quando rolar para cima
+    - search.highlight       # Faz um highlight no texto quando clicado após a pesquisa
+    - search.share           # Coloca um botão para compartilhar a busca
+    - navigation.indexes     # Permite a navegação para o index do menu
+  not_found: index.md
