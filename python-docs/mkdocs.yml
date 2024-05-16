@@ -1,6 +1,7 @@
 site_name: Google Colab e Python
 theme:
   name: material
+  logo: 'images/python-logo.png'
   language: pt
   font:
     text: Roboto
