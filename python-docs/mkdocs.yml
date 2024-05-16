@@ -8,18 +8,18 @@ theme:
   palette: 
     - scheme: default
       media: "(prefers-color-scheme: dark)" # Config para que o default seja atribuido conforme o SO
-      primary: '3776AB' # Azul Python
-      accent: 'FFD43B' # Amarelo Python
+      primary: 'FFD43B' # Amarelo Python para tema escuro
+      accent: '3776AB' # Azul Python como cor secundária
       toggle:
         icon: material/toggle-switch-off-outline
         name: Voltar a enxergar
     - scheme: slate 
       media: "(prefers-color-scheme: light)" # Config para que o default seja atribuido conforme o SO
-      primary: '3776AB' # Azul Python
-      accent: 'FFD43B' # Amarelo Python
+      primary: '3776AB' # Azul Python para tema claro
+      accent: 'FFD43B' # Amarelo Python como cor secundária
       toggle:
         icon: material/toggle-switch
-        name: Ficar cego    
+        name: Ficar cego  
   features: 
     - content.code.annotate
     - content.tabs.link
