@@ -9,17 +9,17 @@ theme:
     - scheme: default
       media: "(prefers-color-scheme: dark)" # Config para que o default seja atribuido conforme o SO
       primary: blue
-      accent: deep orange
+      accent: deep blue
       toggle:
         icon: material/toggle-switch-off-outline
-        name: Alterar para tema escuro
+        name: Voltar a enxergar
     - scheme: slate 
-      media: "(prefers-color-scheme: claro)" # Config para que o default seja atribuido conforme o SO
-      primary: blue
-      accent: deep orange
+      media: "(prefers-color-scheme: escuro)" # Config para que o default seja atribuido conforme o SO
+      primary: yellow
+      accent: deep blue
       toggle:
         icon: material/toggle-switch
-        name: Alterar para tema claro     
+        name: Ficar cego     
   features: 
     - content.code.annotate
     - content.tabs.link
