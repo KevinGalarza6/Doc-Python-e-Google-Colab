@@ -14,12 +14,12 @@ theme:
         icon: material/toggle-switch-off-outline
         name: Voltar a enxergar
     - scheme: slate 
-      media: "(prefers-color-scheme: escuro)" # Config para que o default seja atribuido conforme o SO
+      media: "(prefers-color-scheme: light)" # Config para que o default seja atribuido conforme o SO
       primary: '3776AB' # Azul Python
       accent: 'FFD43B' # Amarelo Python
       toggle:
         icon: material/toggle-switch
-        name: Ficar cego     
+        name: Ficar cego    
   features: 
     - content.code.annotate
     - content.tabs.link
