@@ -8,15 +8,15 @@ theme:
   palette: 
     - scheme: default
       media: "(prefers-color-scheme: dark)" # Config para que o default seja atribuido conforme o SO
-      primary: blue
-      accent: deep blue
+      primary: '3776AB' # Azul Python
+      accent: 'FFD43B' # Amarelo Python
       toggle:
         icon: material/toggle-switch-off-outline
         name: Voltar a enxergar
     - scheme: slate 
       media: "(prefers-color-scheme: escuro)" # Config para que o default seja atribuido conforme o SO
-      primary: yellow
-      accent: deep blue
+      primary: '3776AB' # Azul Python
+      accent: 'FFD43B' # Amarelo Python
       toggle:
         icon: material/toggle-switch
         name: Ficar cego     
