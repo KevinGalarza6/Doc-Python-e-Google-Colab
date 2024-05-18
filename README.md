@@ -5,6 +5,7 @@
 No powershell, executar o comando:
 ```
 pip install mkdocs
+pip install mkdocs-material
 ```
 
 ## Rodar server local
