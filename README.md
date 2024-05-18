@@ -1,6 +1,6 @@
 # Requerimentos
 
-## Lista de comandos necessários para rodar o mkdocs (é necessário ter o [python](https://www.python.org/ftp/python/3.13.0/python-3.13.0b1-amd64.exe))
+## Lista de comandos necessários para rodar o mkdocs (é necessário ter o [python](https://www.python.org/ftp/python/3.12.3/python-3.12.3-amd64.exe))
 
 No powershell, executar o comando:
 ```
