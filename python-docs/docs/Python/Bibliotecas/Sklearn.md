@@ -4,7 +4,8 @@ O Scikit-learn é uma biblioteca projetada para aprendizado de máquina e minera
 
 ```sh
 import sklearn
-`````
+```
+
 Utilização da biblioteca:
 A Aprendizagem de máquina é dividida em duas categorias principais(Aprendizado Supervisionado e Não-Supervisionado) com cinco subcategorias totais:
 - Classificação.
@@ -14,7 +15,9 @@ A Aprendizagem de máquina é dividida em duas categorias principais(Aprendizado
 - Sumarização
 
 ## Aprendizado Supervisionado
+
  Classificação: ferramentas para classificação de dados, como SVM, KNN, árvores de decisão, etc...
+
 ```sh
 # Exemplo com KNN
 from sklearn.datasets import load_iris
@@ -35,8 +38,10 @@ knn.fit(X_treino, y_treino)
 
 # Previsões
 previsoes = knn.predict(X_teste)
-````
+```
+
 Regressão: ferramentas para regressão, como regressão linear, regressão de Ridge, regressão de Lasso, etc...
+
 ```sh
 # Exemplo com Regressão Linear
 from sklearn.linear_model import LinearRegression
@@ -51,10 +56,12 @@ modelo.fit(X, y)
 
 # Previsões
 previsoes = modelo.predict([[6]])
-`````
+```
 
 ## Aprendizado Não-Supervisionado
+
 Clusterização: ferramentas para clusterização de dados, como K-means, DBSCAN, e clustering hierárquico.
+
 ```sh
 # Exemplo com K-Means
 from sklearn.cluster import KMeans
@@ -71,8 +78,10 @@ kmeans.fit(X)
 # Previsões
 rotulos = kmeans.predict([[0, 0], [12, 3]])
 centroides = kmeans.cluster_centers_
-`````
+```
+
 Sumarização: Ferramentas para reduzir a dimensionalidade dos dados e extrair características importantes, como PCA e SVD.
+
 ```sh
 # Exemplo com PCA
 from sklearn.decomposition import PCA
@@ -89,11 +98,14 @@ componentes_principais = pca.fit_transform(X)
 
 # Resultados
 variancia_explicada = pca.explained_variance_ratio_
-`````
+```
 
 ## Pré-processamento de Dados
-#### Normalização e Padronização
+
+### Normalização e Padronização
+
 A normalização e padronização ajustam os valores dos dados para ficarem em uma escala comum, o que é importante para muitos algoritmos de machine learning.
+
 ```sh
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 import numpy as np
@@ -109,9 +121,12 @@ print(dadosPadronizados)
 normalizador = MinMaxScaler()
 dadosNormalizados = normalizador.fit_transform(dados)
 print(dadosNormalizados)
-`````
-#### Transformação de Recursos
+```
+
+### Transformação de Recursos
+
 A transformação de recursos modifica os dados para melhor adaptá-los aos algoritmos de machine learning, como a criação de novas features polinomiais ou codificação one-hot.
+
 ```sh
 from sklearn.preprocessing import PolynomialFeatures, OneHotEncoder
 import numpy as np
@@ -131,10 +146,14 @@ categorias = np.array([['A'], ['B'], ['C'], ['A']])
 codificador = OneHotEncoder(sparse=False)
 categoriasCodificadas = codificador.fit_transform(categorias)
 print(categoriasCodificadas)
-`````
+```
+
 ## Seleção de Modelo
-#### Validação Cruzada
+
+### Validação Cruzada
+
 A validação cruzada é uma técnica para avaliar a performance de um modelo, dividindo os dados em múltiplas partes e treinando o modelo em diferentes subconjuntos dos dados.
+
 ```sh
 from sklearn.model_selection import KFold, cross_val_score
 from sklearn.linear_model import LogisticRegression
@@ -149,9 +168,12 @@ kf = KFold(n_splits=5)
 modelo = LogisticRegression(max_iter=200)
 pontuacoes = cross_val_score(modelo, dados, rotulos, cv=kf)
 print(pontuacoes)
-`````
-#### Busca de Hiperparâmetros
+```
+
+### Busca de Hiperparâmetros
+
 A busca de hiperparâmetros ajusta os parâmetros de um modelo para encontrar a melhor combinação usando técnicas como a busca em grade.
+
 ```sh
 from sklearn.model_selection import GridSearchCV
 from sklearn.svm import SVC
@@ -169,10 +191,14 @@ modelo = SVC()
 buscaEmGrade = GridSearchCV(modelo, parametros, cv=5)
 buscaEmGrade.fit(dados, rotulos)
 print(buscaEmGrade.best_params_)
-`````
+```
+
 ## Conjunto de Dados
-#### Datasets Incorporados
+
+### Datasets Incorporados
+
 A biblioteca inclui vários conjuntos de dados reais e sintéticos para testar e experimentar diferentes algoritmos de aprendizagem de máquina.
+
 ```sh
 from sklearn.datasets import load_iris, load_digits
 
@@ -183,10 +209,12 @@ print(iris.data.shape)
 # Carregar conjunto de dados Digits
 digitos = load_digits()
 print(digitos.data.shape)
-`````
+```
 
-#### Geradores de Dados Sintéticos
+### Geradores de Dados Sintéticos
+
 Os geradores de dados sintéticos criam conjuntos de dados artificiais que podem ser usados para testar algoritmos de machine learning.
+
 ```sh
 from sklearn.datasets import make_classification, make_regression
 
@@ -197,9 +225,12 @@ print(dadosClassificacao.shape, rotulosClassificacao.shape)
 # Gerar dados de regressão
 dadosRegressao, rotulosRegressao = make_regression(n_samples=100, n_features=5)
 print(dadosRegressao.shape, rotulosRegressao.shape)
-`````
+```
+
 ## Pipelines
+
 Os pipelines permitem a combinação de vários passos de pré-processamento e modelagem em uma única sequência, facilitando a manutenção e a replicabilidade dos experimentos.
+
 ```sh
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
@@ -226,16 +257,21 @@ pipeline.fit(dadosTreino, rotulosTreino)
 # Fazer previsões
 previsoes = pipeline.predict(dadosTeste)
 print(previsoes)
-`````
+```
+
 ## Métricas de Avaliação
+
 - Classificação: Acurácia, Precisão, Recall e F1-Score.
 - Regressão: Erro Quadrático Médio e Coeficiente de Determinação.
 - Clusterização: Coeficiente de Silhueta e Índice de Davies-Bouldin
 - Sumarização: Inércia e Variação Explicada
 
 ## Análise de Modelos 
-#### Validação e Ajuste de Modelos
+
+### Validação e Ajuste de Modelos
+
 A validação e ajuste de modelos permitem verificar a performance de um modelo para diferentes valores de hiperparâmetros, ajudando a evitar overfitting.
+
 ```sh
 from sklearn.model_selection import validation_curve
 from sklearn.datasets import load_iris
@@ -252,13 +288,16 @@ pontuacoesTreino, pontuacoesTeste = validation_curve(SVC(), dados, rotulos, para
 
 print(pontuacoesTreino)
 print(pontuacoesTeste)
-`````
+```
+
 ## Curvas de Aprendizado e Validação
+
 As curvas de aprendizado ajudam a entender a performance de um modelo com diferentes tamanhos de conjunto de treinamento, indicando se o modelo sofre de high bias ou high variance.
+
 ```sh
 from sklearn.model_selection import learning_curve
 from sklearn.datasets import load_iris
 from sklearn.ensemble import RandomForestClassifier
 import matplotlib.pyplot as plt
 import numpy as np
-`````
+```

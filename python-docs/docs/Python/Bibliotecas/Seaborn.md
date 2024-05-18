@@ -8,12 +8,14 @@ import seaborn as sb
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-`````
+```
+
 Utilização da biblioteca:
 - Existem 3 tipos principais de gráficos: relacionais, de distribuição e de categorias.
 - Ter conhecimento sobre os gráficos e a melhor maneira de usar cada um deles.
 
 DataFrame de exemplo para os gráficos.
+
 ```sh
 pessoa = {
     'idade': np.random.randint(18, 70, 100),
@@ -23,18 +25,24 @@ pessoa = {
     'pontuacao': np.random.randint(1, 101, 100)
 }
 df = pd.DataFrame(pessoa)
-`````
+```
+
 Controlando o estilo global dos gráficos.
+
 ```sh
 # Entre eles: darkgrid, whitegrid, dark, white, ticks
 sns.set_style("whitegrid")
-`````
+```
+
 Controlando a escala da fonte.
+
 ```sh
 # Entre elas: paper, notebook, talk, poster
 sns.set_context("notebook")
-`````
-Para facilitar a exibição dos gráficos, criamos essas três variáveis úteis: 
+```
+
+Para facilitar a exibição dos gráficos, criamos essas três variáveis úteis:
+
 ```sh
 # Agrupando as idades em faixas
 faixasEtarias = pd.cut(df['idade'], bins=[18, 25, 35, 45, 55, 65, 75])
@@ -44,10 +52,12 @@ contagemFaixaEtaria = df.groupby(faixasEtarias).size().reset_index(name='contage
 
 # Calculando a média da pontuação no teste por faixa etária
 mediaPontuacaoPorFaixa = df.groupby(faixasEtarias)['pontuacao'].mean()
-`````
+```
 
 ## Gráficos Relacionais
-#### Lineplot
+
+### Lineplot
+
 ```sh
 # Criando o lineplot para ver a relação da nota por faixa etária
 plt.figure(figsize=(10, 6))
@@ -58,10 +68,12 @@ plt.title('Relação da Pontuação Média no Teste por Faixa Etária')
 plt.xticks(range(len(mediaPontuacaoPorFaixa)), mediaPontuacaoPorFaixa.index, rotation=45)
 plt.grid(True)
 plt.show()
-`````
+```
+
 ![](../../images/1G.png)
 
-#### Scatterplot
+### Scatterplot
+
 ```sh
 # Criando o scatterplot para ver a relação entre altura e peso
 plt.figure(figsize=(8, 6))
@@ -71,11 +83,14 @@ plt.ylabel('Peso (kg)')
 plt.title('Relação entre Altura e Peso')
 plt.grid(True)
 plt.show()
-`````
+```
+
 ![](../../images/2G.png)
 
 ## Gráficos de Distribuição
-#### Histplot
+
+### Histplot
+
 ```sh
 # Criando o histplot para ver a distribuição de idades
 plt.figure(figsize=(8, 6))
@@ -85,10 +100,12 @@ plt.ylabel('Contagem')
 plt.title('Distribuição da Idade das Pessoas')
 plt.grid(True)
 plt.show()
-`````
+```
+
 ![](../../images/3G.png)
 
-#### Kdeplot
+### Kdeplot
+
 ```sh
 # Criando o kdeplot para ver a distribuição de altura por gênero
 cores = {'Masculino': 'orange', 'Feminino': 'blue'}
@@ -101,11 +118,14 @@ plt.title('Distribuição da Altura por Gênero')
 plt.grid(True)
 plt.legend(title='Gênero', loc='upper right')
 plt.show()
-`````
+```
+
 ![](../../images/4G.png)
 
 ## Gráficos de Categorias
-#### Stripplot
+
+### Stripplot
+
 ```sh
 # Criando o stripplot para ver a altura por gênero e faixa etária
 plt.figure(figsize=(12, 6))
@@ -116,10 +136,12 @@ plt.title('Altura por Gênero e Faixa Etária')
 plt.legend(title='Faixa Etária', bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.grid(True)
 plt.show()
-`````
+```
+
 ![](../../images/5G.png)
 
-#### Barplot
+### Barplot
+
 ```sh
 # Criando o barplot para ver quantidade de pessoas por faixa etária
 plt.figure(figsize=(10, 6))
@@ -128,10 +150,12 @@ plt.xlabel('Número de Pessoas')
 plt.ylabel('Faixa Etária')
 plt.title('Contagem de Pessoas por Faixa Etária')
 plt.show()
-`````
+```
+
 ![](../../images/6G.png)
 
-#### Boxplot
+### Boxplot
+
 ```sh
 # Criando o boxplot para ver o peso por faixa etária
 plt.figure(figsize=(10, 6))
@@ -141,10 +165,12 @@ plt.ylabel('Peso')
 plt.title('Distribuição do Peso por Faixa Etária')
 plt.grid(True)
 plt.show()
-`````
+```
+
 ![](../../images/7G.png)
 
-#### Violinplot
+### Violinplot
+
 ```sh
 # Criando o violinplot para ver a altura por faixa etária
 plt.figure(figsize=(10, 6))
@@ -154,5 +180,6 @@ plt.ylabel('Altura')
 plt.title('Distribuição da Altura por Faixa Etária')
 plt.grid(True)
 plt.show()
-`````
+```
+
 ![](../../images/8G.png)
