@@ -519,6 +519,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Pandas
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -528,6 +539,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#operacoes-estatisticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operações estatísticas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limpeza-e-preparacao-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limpeza e Preparação de Dados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leitura-e-escrita-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leitura e Escrita de Dados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analise-exploratoria-e-visualizacao-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análise exploratória e visualização de dados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -689,6 +764,59 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#operacoes-estatisticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operações estatísticas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limpeza-e-preparacao-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limpeza e Preparação de Dados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leitura-e-escrita-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leitura e Escrita de Dados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analise-exploratoria-e-visualizacao-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análise exploratória e visualização de dados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -705,30 +833,28 @@
 <h1 id="pandas">Pandas</h1>
 <p>O Pandas é uma biblioteca em Python projetada para análise e manipulação de dados tabulares, oferecendo estruturas de dados, sendo as principais o DataFrame e Series.
 Importando o Pandas em seu ambiente de desenvolvimento favorito, não importa qual seja.</p>
-<p>```sh
-import pandas as pd</p>
-<pre><code>Utilização da biblioteca:
-- Series: é uma estrutura unidimensional, tendo apenas um tipo de dado e armazenando dados mais simples e homogêneos. 
-```sh
-valores = [10, 25, 40, 75, 50]
+<pre><code class="language-sh">import pandas as pd
+</code></pre>
+<p>Utilização da biblioteca:
+- Series: é uma estrutura unidimensional, tendo apenas um tipo de dado e armazenando dados mais simples e homogêneos. </p>
+<pre><code class="language-sh">valores = [10, 25, 40, 75, 50]
 serie = pd.Series(valores)
 </code></pre>
 <ul>
-<li>DataFrame: é a principal estrutura de dados do Pandas e organiza os dados em uma tabela com linhas e colunas, parecido com uma tabela de banco de dados. 
-```sh</li>
+<li>DataFrame: é a principal estrutura de dados do Pandas e organiza os dados em uma tabela com linhas e colunas, parecido com uma tabela de banco de dados. </li>
 </ul>
-<h1 id="este-dataframe-sera-usado-para-os-proximos-topicos">Este DataFrame será usado para os próximos tópicos</h1>
-<p>vendas = {
+<pre><code class="language-sh"># Este DataFrame será usado para os próximos tópicos
+vendas = {
     'Data': ['2024-05-14', '2024-05-15', '2024-05-16', '2024-05-17', '2024-05-18', '2024-05-19', '2024-05-20'],
     'Vendas': [150, 220, None, 175, 160, 180, 250],
     'Produto': ['A', 'B', 'C', 'D', None, 'F', 'G'],
     'Quantidade': [10, 150, 30, None, 50, 60, 70]
 }
-df = pd.DataFrame(vendas)</p>
-<pre><code>## Operações estatísticas
-Algumas funções básicas da biblioteca permitem operações estatísticas nas estruturas de dados, entre elas:
-```sh
-# Operações baseadas na coluna Vendas
+df = pd.DataFrame(vendas)
+</code></pre>
+<h2 id="operacoes-estatisticas">Operações estatísticas</h2>
+<p>Algumas funções básicas da biblioteca permitem operações estatísticas nas estruturas de dados, entre elas:</p>
+<pre><code class="language-sh"># Operações baseadas na coluna Vendas
 media = df['Vendas'].mean()
 mediana = df['Vendas'].median()
 moda = df['Vendas'].mode()
@@ -737,29 +863,29 @@ variancia = df['Vendas'].var()
 contagem = df['Vendas'].count()
 </code></pre>
 <h2 id="limpeza-e-preparacao-de-dados">Limpeza e Preparação de Dados</h2>
-<p>Preencher valores ausentes, remover linhas e valores duplicados no DataFrame.
-```sh
-df['Vendas'].fillna(160, inplace=True) # Preenche com o valor 160
+<p>Preencher valores ausentes, remover linhas e valores duplicados no DataFrame.</p>
+<pre><code class="language-sh">df['Vendas'].fillna(160, inplace=True) # Preenche com o valor 160
 df.dropna(subset=['Produto', 'Quantidade'], inplace=True) # Remove linha com valor ausente nas colunas específicas
-df.drop_duplicates(inplace=True) # Remove valores duplicados</p>
-<pre><code>Converter a coluna 'Data' para um datetime.
-```sh
-df['Data'] = pd.to_datetime(df['Data'])
+df.drop_duplicates(inplace=True) # Remove valores duplicados
+</code></pre>
+<p>Converter a coluna 'Data' para um datetime.</p>
+<pre><code class="language-sh">df['Data'] = pd.to_datetime(df['Data'])
 </code></pre>
 <p>Também podemos detectar, tratar e/ou excluir outliers. 
-Neste exemplo, foi usada a técnica do IQR (Intervalo Interquartil) para a coluna 'Quantidade'.
-```sh</p>
-<h1 id="calcular-os-quartis-q1-e-q3-para-achar-o-iqr">Calcular os quartis Q1 e Q3 para achar o IQR</h1>
-<p>Q1 = df['Quantidade'].quantile(0.25)
+Neste exemplo, foi usada a técnica do IQR (Intervalo Interquartil) para a coluna 'Quantidade'.</p>
+<pre><code class="language-sh"># Calcular os quartis Q1 e Q3 para achar o IQR
+Q1 = df['Quantidade'].quantile(0.25)
 Q3 = df['Quantidade'].quantile(0.75)
-IQR = Q3 - Q1</p>
-<p>limiteInferior = Q1 - 1.5 * IQR
-limiteSuperior = Q3 + 1.5 * IQR</p>
-<h1 id="remover-outliers">Remover outliers</h1>
-<p>df = df[(df['Quantidade'] &gt;= limiteInferior) &amp; (df['Quantidade'] &lt;= limiteSuperior)]</p>
-<pre><code>Com a limpeza e preparação realizada, o DataFrame ficou assim:
-```sh
-print(df)
+IQR = Q3 - Q1
+
+limiteInferior = Q1 - 1.5 * IQR
+limiteSuperior = Q3 + 1.5 * IQR
+
+# Remover outliers
+df = df[(df['Quantidade'] &gt;= limiteInferior) &amp; (df['Quantidade'] &lt;= limiteSuperior)]
+</code></pre>
+<p>Com a limpeza e preparação realizada, o DataFrame ficou assim:</p>
+<pre><code class="language-sh">print(df)
 # Output
         Data  Vendas Produto  Quantidade
 0 2024-05-14   150.0       A        10.0
@@ -768,36 +894,34 @@ print(df)
 6 2024-05-20   250.0       G        70.0
 </code></pre>
 <h2 id="leitura-e-escrita-de-dados">Leitura e Escrita de Dados</h2>
-<p>A biblioteca tem recursos para ler e escrever em dezenas de formatos diferentes, entre eles: CSV, Excel, JSON, SQL, HTML, HDF5, Parquet e muitos outros formatos.
-```sh</p>
-<h1 id="escrita-do-dataframe-do-exemplo-anterior-para-o-arquivo-vendasxlsx-suportado-pelo-excel">Escrita do DataFrame do exemplo anterior para o arquivo 'vendas.xlsx', suportado pelo Excel</h1>
-<p>df.to_excel('vendas.xlsx', index=False)</p>
-<h1 id="leitura-dos-dados-do-arquivo-vendasxlsx">Leitura dos dados do arquivo 'vendas.xlsx'</h1>
-<p>dfExcel = pd.read_excel('vendas.xlsx')</p>
-<pre><code>## Análise exploratória e visualização de dados
-Mostrar as primeiras, últimas e determinadas linhas do DataFrame.
-```sh
-print(df.head(2)) # Primeiras duas linhas
+<p>A biblioteca tem recursos para ler e escrever em dezenas de formatos diferentes, entre eles: CSV, Excel, JSON, SQL, HTML, HDF5, Parquet e muitos outros formatos.</p>
+<pre><code class="language-sh"># Escrita do DataFrame do exemplo anterior para o arquivo 'vendas.xlsx', suportado pelo Excel
+df.to_excel('vendas.xlsx', index=False)
+# Leitura dos dados do arquivo 'vendas.xlsx'
+dfExcel = pd.read_excel('vendas.xlsx')
+</code></pre>
+<h2 id="analise-exploratoria-e-visualizacao-de-dados">Análise exploratória e visualização de dados</h2>
+<p>Mostrar as primeiras, últimas e determinadas linhas do DataFrame.</p>
+<pre><code class="language-sh">print(df.head(2)) # Primeiras duas linhas
 print(df.tail(2)) # Últimas duas linhas
 print(df.loc[[0, 5], ['Produto', 'Vendas']]) # Linha 0 e Linha 5 das colunas específicas
 </code></pre>
-<p>Mostrar estatísticas descritivas das colunas numéricas.
-```sh
-print(df.describe().round(2)) # Valores com apenas duas casas após a vírgula</p>
-<h1 id="output">Output</h1>
-<pre><code>                  Data  Vendas  Quantidade
-</code></pre>
-<p>count                    4    4.00        4.00
+<p>Mostrar estatísticas descritivas das colunas numéricas.</p>
+<pre><code class="language-sh">print(df.describe().round(2)) # Valores com apenas duas casas após a vírgula
+
+#Output
+                      Data  Vendas  Quantidade
+count                    4    4.00        4.00
 mean   2024-05-17 06:00:00  185.00       42.50
 min    2024-05-14 00:00:00  150.00       10.00
 25%    2024-05-15 12:00:00  157.50       25.00
 50%    2024-05-17 12:00:00  170.00       45.00
 75%    2024-05-19 06:00:00  197.50       62.50
 max    2024-05-20 00:00:00  250.00       70.00
-std                    NaN   45.09       27.54</p>
-<pre><code>Visão geral do DataFrame.
-```sh
-print(df.info()) 
+std                    NaN   45.09       27.54
+</code></pre>
+<p>Visão geral do DataFrame.</p>
+<pre><code class="language-sh">print(df.info()) 
 
 #Output 
 &lt;class 'pandas.core.frame.DataFrame'&gt;
@@ -813,15 +937,15 @@ dtypes: datetime64[ns](1), float64(2), object(1)
 memory usage: 160.0+ bytes
 None
 </code></pre>
-<p>Agregar dados de uma ou mais colunas.
-```sh
-print(df.agg({'Vendas': 'sum', 'Quantidade': 'sum'}))</p>
-<h1 id="output_1">Output</h1>
-<p>Vendas        740.0
+<p>Agregar dados de uma ou mais colunas.</p>
+<pre><code class="language-sh">print(df.agg({'Vendas': 'sum', 'Quantidade': 'sum'}))
+
+#Output
+Vendas        740.0
 Quantidade    170.0
 dtype: float64
-`````</p>
-<h1 id="conclusao">Conclusão</h1>
+</code></pre>
+<h2 id="conclusao">Conclusão</h2>
 <p>Ao importar o Pandas em qualquer ambiente de desenvolvimento Python, você ganha acesso a uma ampla gama de funcionalidades para trabalhar com dados de forma rápida e eficaz.
 Além das operações básicas de criação e manipulação de dados, como a criação de Series e DataFrames, o Pandas oferece uma variedade de funções para análise estatística, limpeza e preparação de dados, leitura e escrita de dados em diferentes formatos, e análise exploratória e visualização de dados.</p>
 <p>Outras funções úteis do Pandas incluem:

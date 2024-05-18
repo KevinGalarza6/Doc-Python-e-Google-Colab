@@ -540,6 +540,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    SciPy
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -549,6 +560,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#distribuicao-estatisticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distribuição Estatísticas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testes-estatisticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testes Estatísticos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algebra-linear-avancada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Álgebra Linear Avançada
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#otimizacao-e-ajuste-de-curvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Otimização e Ajuste de Curvas
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -689,6 +755,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#distribuicao-estatisticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distribuição Estatísticas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testes-estatisticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testes Estatísticos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algebra-linear-avancada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Álgebra Linear Avançada
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#otimizacao-e-ajuste-de-curvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Otimização e Ajuste de Curvas
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -704,22 +814,19 @@
 
 <h1 id="scipy">SciPy</h1>
 <p>SciPy é uma biblioteca fundamental para a computação científica, construída sobre a base sólida do NumPy, oferecendo uma amplas funcionalidades para resolver problemas matemáticos, científicos e de engenharia. Enquanto NumPy é excelente para manipulação e operações em arrays multidimensionais, SciPy expande essas capacidades com funções adicionais para álgebra linear, otimização, integração, interpolação, análise de Fourier, processamento de sinais, estatísticas e muito mais.</p>
-<p>```sh
-import numpy as np</p>
-<h1 id="recomenda-se-importar-apenas-os-submodulos-necessarios-para-economizar-memoria-e-acelerar-o-script">Recomenda-se importar apenas os submódulos necessários para economizar memória e acelerar o script.</h1>
-<p>from scipy import stats, linalg, optimize</p>
-<pre><code>Utilização da biblioteca:
-- É fundamental ter conhecimento da biblioteca numpy, suas funções e resoluções.
-
-Por que usar a biblioteca SciPy ao invés da NumPy?
+<pre><code class="language-sh">import numpy as np
+# Recomenda-se importar apenas os submódulos necessários para economizar memória e acelerar o script.
+from scipy import stats, linalg, optimize
+</code></pre>
+<p>Utilização da biblioteca:
+- É fundamental ter conhecimento da biblioteca numpy, suas funções e resoluções.</p>
+<p>Por que usar a biblioteca SciPy ao invés da NumPy?
 - Funcionalidades avançadas de álgebra linear, enquanto a NumPy fornece funções mais básicas.
 - Mais robusta e abrangente se comparada com a NumPy, que é mais rápida para operações simples.
-- Contém otimizações para certos cálculos que podem serem lentos ou inexistentes na NumPy.
-
-## Distribuição Estatísticas
-Assim como o NumPy, o SciPy oferece suporte para várias distribuições estatísticas, mas com funcionalidades extras.
-```sh
-# Distribuição Normal
+- Contém otimizações para certos cálculos que podem serem lentos ou inexistentes na NumPy.</p>
+<h2 id="distribuicao-estatisticas">Distribuição Estatísticas</h2>
+<p>Assim como o NumPy, o SciPy oferece suporte para várias distribuições estatísticas, mas com funcionalidades extras.</p>
+<pre><code class="language-sh"># Distribuição Normal
 # Criação de uma variável aleatória normalmente distribuída
 rvNormal = stats.norm(loc=0, scale=1)  # Média = 0, Desvio padrão = 1
 aleatoriosNormal = rvNormal.rvs(size=100)  # Gera 100 números aleatórios
@@ -727,21 +834,20 @@ mediaNormal = rvNormal.mean()  # Média da distribuição
 varianciaNormal = rvNormal.var()  # Variância da distribuição
 </code></pre>
 <h2 id="testes-estatisticos">Testes Estatísticos</h2>
-<p>A biblioteca ornece uma amplos testes estatísticos para diferentes propósitos.
-```sh</p>
-<h1 id="teste-t-de-student">Teste t de Student</h1>
-<h1 id="verifica-se-ha-diferenca-significativa-entre-as-medias-de-duas-amostras-independentes">Verifica se há diferença significativa entre as médias de duas amostras independentes</h1>
-<p>amostra1 = np.random.normal(loc=0, scale=1, size=100)
+<p>A biblioteca ornece uma amplos testes estatísticos para diferentes propósitos.</p>
+<pre><code class="language-sh"># Teste t de Student
+# Verifica se há diferença significativa entre as médias de duas amostras independentes
+amostra1 = np.random.normal(loc=0, scale=1, size=100)
 amostra2 = np.random.normal(loc=0.5, scale=1, size=100)
-tStatistic, pValue = stats.ttest_ind(amostra1, amostra2)</p>
-<h1 id="teste-qui-quadrado">Teste qui-quadrado</h1>
-<h1 id="testa-a-independencia-entre-variaveis-categoricas-em-uma-tabela-de-contingencia">Testa a independência entre variáveis categóricas em uma tabela de contingência</h1>
-<p>tabelaContingencia = np.array([[10, 20, 30], [6,  9,  17]])
-chi2Statistic, pValue, degreesOfFreedom, expected = stats.chi2_contingency(tabelaContingencia)</p>
-<pre><code>
-## Álgebra Linear Avançada
-```sh
-# Decomposição de Valores Singulares (SVD)
+tStatistic, pValue = stats.ttest_ind(amostra1, amostra2)
+
+# Teste qui-quadrado
+# Testa a independência entre variáveis categóricas em uma tabela de contingência
+tabelaContingencia = np.array([[10, 20, 30], [6,  9,  17]])
+chi2Statistic, pValue, degreesOfFreedom, expected = stats.chi2_contingency(tabelaContingencia)
+</code></pre>
+<h2 id="algebra-linear-avancada">Álgebra Linear Avançada</h2>
+<pre><code class="language-sh"># Decomposição de Valores Singulares (SVD)
 matriz = np.random.random((3, 3))
 U, S, V = linalg.svd(matriz)
 
@@ -754,17 +860,18 @@ b = np.array([1, 0, -1])
 x = linalg.spsolve(matrizEsparsa, b)
 </code></pre>
 <h2 id="otimizacao-e-ajuste-de-curvas">Otimização e Ajuste de Curvas</h2>
-<p>Opções para otimização numérica e ajuste de curvas.
-```sh</p>
-<h1 id="otimizacao-de-funcoes">Otimização de Funções</h1>
-<p>def func(x):
-    return x*<em>2 + 10</em>np.sin(x)</p>
-<p>otimizacao = optimize.minimize(func, x0=0)</p>
-<h1 id="ajuste-de-curvas">Ajuste de Curvas</h1>
-<p>x = np.linspace(0, 10, 100)
+<p>Opções para otimização numérica e ajuste de curvas.</p>
+<pre><code class="language-sh"># Otimização de Funções
+def func(x):
+    return x**2 + 10*np.sin(x)
+
+otimizacao = optimize.minimize(func, x0=0)
+
+# Ajuste de Curvas
+x = np.linspace(0, 10, 100)
 y = func(x) + np.random.normal(size=x.size)
 parametros, covariancia = optimize.curve_fit(func, x, y)
-`````</p>
+</code></pre>
 
 
 
