@@ -9,23 +9,25 @@
       
       
       
+        <link rel="prev" href="../Scipy/">
       
-        <link rel="next" href="Google%20Colab/">
+      
+        <link rel="next" href="../Sklearn/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.23">
     
     
       
-        <title>Google Colab e Python</title>
+        <title>Seaborn - Google Colab e Python</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introducao" class="md-skip">
+        <a href="#seaborn" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -84,9 +86,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="." title="Google Colab e Python" class="md-header__button md-logo" aria-label="Google Colab e Python" data-md-component="logo">
+    <a href="../../.." title="Google Colab e Python" class="md-header__button md-logo" aria-label="Google Colab e Python" data-md-component="logo">
       
-  <img src="images/python-logo.png" alt="logo">
+  <img src="../../../images/python-logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -103,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introdução
+              Seaborn
             
           </span>
         </div>
@@ -201,11 +203,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -224,7 +224,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="Google%20Colab/" class="md-tabs__link">
+        <a href="../../../Google%20Colab/" class="md-tabs__link">
           
   
     
@@ -240,11 +240,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="Python/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
     
@@ -279,9 +281,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Google Colab e Python" class="md-nav__button md-logo" aria-label="Google Colab e Python" data-md-component="logo">
+    <a href="../../.." title="Google Colab e Python" class="md-nav__button md-logo" aria-label="Google Colab e Python" data-md-component="logo">
       
-  <img src="images/python-logo.png" alt="logo">
+  <img src="../../../images/python-logo.png" alt="logo">
 
     </a>
     Google Colab e Python
@@ -293,19 +295,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -314,7 +307,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -347,7 +339,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="Google%20Colab/" class="md-nav__link ">
+            <a href="../../../Google%20Colab/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -379,6 +371,8 @@
       
   
   
+    
+  
   
   
     
@@ -395,19 +389,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="Python/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -418,13 +415,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Python
@@ -437,8 +434,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -458,11 +457,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -476,7 +475,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Bibliotecas
@@ -490,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Python/Bibliotecas/Numpy/" class="md-nav__link">
+      <a href="../Numpy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -511,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Python/Bibliotecas/Pandas/" class="md-nav__link">
+      <a href="../Pandas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -532,7 +531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Python/Bibliotecas/Scipy/" class="md-nav__link">
+      <a href="../Scipy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -550,10 +549,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="Python/Bibliotecas/Seaborn/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -562,6 +570,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -574,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Python/Bibliotecas/Sklearn/" class="md-nav__link">
+      <a href="../Sklearn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -624,7 +633,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="Python/Estruturas%20da%20Linguagem/" class="md-nav__link ">
+            <a href="../../Estruturas%20da%20Linguagem/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -693,17 +702,150 @@
                   
 
 
-<h1 id="introducao">Introdução</h1>
-<p>Essa documentação fala a respeito sobre o Google Colab e o Python.</p>
-<p>Alunos: </p>
-<ul>
-<li>Alan Paim Muller (32447680)</li>
-<li>Bruna Fabro (38358611)</li>
-<li>João Pedro Pegorini</li>
-<li>Kevin Galarza (23382783)</li>
-<li>Luan Zanon (26298716)</li>
-<li>Renan Mussatto (0256371)</li>
-</ul>
+<h1 id="seaborn">Seaborn</h1>
+<p>Seaborn é uma biblioteca de visualização de dados, construída sobre o matplotlib, que simplifica a criação de gráficos estatísticos complexos. Muito utilizada para análise exploratória de dados e comunicação de resultados.</p>
+<p>```sh
+import seaborn as sb</p>
+<h1 id="para-os-proximos-topicos-teremos-que-usar-essas-outras-bibliotecas-tambem">Para os próximos tópicos teremos que usar essas outras bibliotecas também:</h1>
+<p>import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np</p>
+<pre><code>Utilização da biblioteca:
+- Existem 3 tipos principais de gráficos: relacionais, de distribuição e de categorias.
+- Ter conhecimento sobre os gráficos e a melhor maneira de usar cada um deles.
+
+DataFrame de exemplo para os gráficos.
+```sh
+pessoa = {
+    'idade': np.random.randint(18, 70, 100),
+    'genero': np.random.choice(['Masculino', 'Feminino'], 100),
+    'altura': np.random.normal(loc=170, scale=10, size=100),
+    'peso': np.random.normal(loc=70, scale=15, size=100),
+    'pontuacao': np.random.randint(1, 101, 100)
+}
+df = pd.DataFrame(pessoa)
+</code></pre>
+<p>Controlando o estilo global dos gráficos.
+```sh</p>
+<h1 id="entre-eles-darkgrid-whitegrid-dark-white-ticks">Entre eles: darkgrid, whitegrid, dark, white, ticks</h1>
+<p>sns.set_style("whitegrid")</p>
+<pre><code>Controlando a escala da fonte.
+```sh
+# Entre elas: paper, notebook, talk, poster
+sns.set_context(&quot;notebook&quot;)
+</code></pre>
+<p>Para facilitar a exibição dos gráficos, criamos essas três variáveis úteis: 
+```sh</p>
+<h1 id="agrupando-as-idades-em-faixas">Agrupando as idades em faixas</h1>
+<p>faixasEtarias = pd.cut(df['idade'], bins=[18, 25, 35, 45, 55, 65, 75])</p>
+<h1 id="contando-quantas-pessoas-estao-em-cada-faixa-etaria">Contando quantas pessoas estão em cada faixa etária</h1>
+<p>contagemFaixaEtaria = df.groupby(faixasEtarias).size().reset_index(name='contagem')</p>
+<h1 id="calculando-a-media-da-pontuacao-no-teste-por-faixa-etaria">Calculando a média da pontuação no teste por faixa etária</h1>
+<p>mediaPontuacaoPorFaixa = df.groupby(faixasEtarias)['pontuacao'].mean()</p>
+<pre><code>
+## Gráficos Relacionais
+#### Lineplot
+```sh
+# Criando o lineplot para ver a relação da nota por faixa etária
+plt.figure(figsize=(10, 6))
+sns.lineplot(x=range(len(mediaPontuacaoPorFaixa)), y=mediaPontuacaoPorFaixa.values, marker='o', color='red', linestyle='-')
+plt.xlabel('Faixa Etária')
+plt.ylabel('Média de Pontuação no Teste')
+plt.title('Relação da Pontuação Média no Teste por Faixa Etária')
+plt.xticks(range(len(mediaPontuacaoPorFaixa)), mediaPontuacaoPorFaixa.index, rotation=45)
+plt.grid(True)
+plt.show()
+</code></pre>
+<p><img alt="" src="../../../images/1G.png" /></p>
+<h4 id="scatterplot">Scatterplot</h4>
+<p>```sh</p>
+<h1 id="criando-o-scatterplot-para-ver-a-relacao-entre-altura-e-peso">Criando o scatterplot para ver a relação entre altura e peso</h1>
+<p>plt.figure(figsize=(8, 6))
+sns.scatterplot(x='altura', y='peso', data=df)
+plt.xlabel('Altura (cm)')
+plt.ylabel('Peso (kg)')
+plt.title('Relação entre Altura e Peso')
+plt.grid(True)
+plt.show()</p>
+<pre><code>![](../../images/2G.png)
+
+## Gráficos de Distribuição
+#### Histplot
+```sh
+# Criando o histplot para ver a distribuição de idades
+plt.figure(figsize=(8, 6))
+sns.histplot(df['idade'], bins=20, kde=True, color='skyblue')
+plt.xlabel('Idade')
+plt.ylabel('Contagem')
+plt.title('Distribuição da Idade das Pessoas')
+plt.grid(True)
+plt.show()
+</code></pre>
+<p><img alt="" src="../../../images/3G.png" /></p>
+<h4 id="kdeplot">Kdeplot</h4>
+<p>```sh</p>
+<h1 id="criando-o-kdeplot-para-ver-a-distribuicao-de-altura-por-genero">Criando o kdeplot para ver a distribuição de altura por gênero</h1>
+<p>cores = {'Masculino': 'orange', 'Feminino': 'blue'}
+plt.figure(figsize=(8, 6))
+for genero, cor in cores.items():
+    sns.kdeplot(data=df[df['genero'] == genero], x='altura', fill=True, alpha=0.5, color=cor, label=genero)
+plt.xlabel('Altura (cm)')
+plt.ylabel('Densidade')
+plt.title('Distribuição da Altura por Gênero')
+plt.grid(True)
+plt.legend(title='Gênero', loc='upper right')
+plt.show()</p>
+<pre><code>![](../../images/4G.png)
+
+## Gráficos de Categorias
+#### Stripplot
+```sh
+# Criando o stripplot para ver a altura por gênero e faixa etária
+plt.figure(figsize=(12, 6))
+sns.stripplot(x='genero', y='altura', hue=faixasEtarias, data=df, jitter=True)
+plt.xlabel('Gênero')
+plt.ylabel('Altura (cm)')
+plt.title('Altura por Gênero e Faixa Etária')
+plt.legend(title='Faixa Etária', bbox_to_anchor=(1.05, 1), loc='upper left')
+plt.grid(True)
+plt.show()
+</code></pre>
+<p><img alt="" src="../../../images/5G.png" /></p>
+<h4 id="barplot">Barplot</h4>
+<p>```sh</p>
+<h1 id="criando-o-barplot-para-ver-quantidade-de-pessoas-por-faixa-etaria">Criando o barplot para ver quantidade de pessoas por faixa etária</h1>
+<p>plt.figure(figsize=(10, 6))
+ax = sns.barplot(x='contagem', y='idade', data=contagemFaixaEtaria, orient='h')
+plt.xlabel('Número de Pessoas')
+plt.ylabel('Faixa Etária')
+plt.title('Contagem de Pessoas por Faixa Etária')
+plt.show()</p>
+<pre><code>![](../../images/6G.png)
+
+#### Boxplot
+```sh
+# Criando o boxplot para ver o peso por faixa etária
+plt.figure(figsize=(10, 6))
+sns.boxplot(x=faixasEtarias, y='peso', data=df)
+plt.xlabel('Faixa Etária')
+plt.ylabel('Peso')
+plt.title('Distribuição do Peso por Faixa Etária')
+plt.grid(True)
+plt.show()
+</code></pre>
+<p><img alt="" src="../../../images/7G.png" /></p>
+<h4 id="violinplot">Violinplot</h4>
+<p>```sh</p>
+<h1 id="criando-o-violinplot-para-ver-a-altura-por-faixa-etaria">Criando o violinplot para ver a altura por faixa etária</h1>
+<p>plt.figure(figsize=(10, 6))
+sns.violinplot(x=faixasEtarias, y='altura', data=df)
+plt.xlabel('Faixa Etária')
+plt.ylabel('Altura')
+plt.title('Distribuição da Altura por Faixa Etária')
+plt.grid(True)
+plt.show()
+`````
+<img alt="" src="../../../images/8G.png" /></p>
 
 
 
@@ -758,10 +900,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.annotate", "content.tabs.link", "navigation.tabs", "navigation.top", "search.highlight", "search.share", "navigation.indexes"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.tabs", "navigation.top", "search.highlight", "search.share", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
     
     
-      <script src="assets/javascripts/bundle.ebd0bdb7.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ebd0bdb7.min.js"></script>
       
     
   </body>

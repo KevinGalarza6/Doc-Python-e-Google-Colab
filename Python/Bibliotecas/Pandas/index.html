@@ -9,23 +9,25 @@
       
       
       
+        <link rel="prev" href="../Numpy/">
       
-        <link rel="next" href="Google%20Colab/">
+      
+        <link rel="next" href="../Scipy/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.23">
     
     
       
-        <title>Google Colab e Python</title>
+        <title>Pandas - Google Colab e Python</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introducao" class="md-skip">
+        <a href="#pandas" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -84,9 +86,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="." title="Google Colab e Python" class="md-header__button md-logo" aria-label="Google Colab e Python" data-md-component="logo">
+    <a href="../../.." title="Google Colab e Python" class="md-header__button md-logo" aria-label="Google Colab e Python" data-md-component="logo">
       
-  <img src="images/python-logo.png" alt="logo">
+  <img src="../../../images/python-logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -103,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introdução
+              Pandas
             
           </span>
         </div>
@@ -201,11 +203,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -224,7 +224,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="Google%20Colab/" class="md-tabs__link">
+        <a href="../../../Google%20Colab/" class="md-tabs__link">
           
   
     
@@ -240,11 +240,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="Python/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
     
@@ -279,9 +281,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Google Colab e Python" class="md-nav__button md-logo" aria-label="Google Colab e Python" data-md-component="logo">
+    <a href="../../.." title="Google Colab e Python" class="md-nav__button md-logo" aria-label="Google Colab e Python" data-md-component="logo">
       
-  <img src="images/python-logo.png" alt="logo">
+  <img src="../../../images/python-logo.png" alt="logo">
 
     </a>
     Google Colab e Python
@@ -293,19 +295,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -314,7 +307,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -347,7 +339,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="Google%20Colab/" class="md-nav__link ">
+            <a href="../../../Google%20Colab/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -379,6 +371,8 @@
       
   
   
+    
+  
   
   
     
@@ -395,19 +389,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="Python/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -418,13 +415,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Python
@@ -437,8 +434,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -458,11 +457,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -476,7 +475,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Bibliotecas
@@ -490,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Python/Bibliotecas/Numpy/" class="md-nav__link">
+      <a href="../Numpy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -508,10 +507,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="Python/Bibliotecas/Pandas/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -520,6 +528,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -532,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Python/Bibliotecas/Scipy/" class="md-nav__link">
+      <a href="../Scipy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -553,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Python/Bibliotecas/Seaborn/" class="md-nav__link">
+      <a href="../Seaborn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -574,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Python/Bibliotecas/Sklearn/" class="md-nav__link">
+      <a href="../Sklearn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -624,7 +633,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="Python/Estruturas%20da%20Linguagem/" class="md-nav__link ">
+            <a href="../../Estruturas%20da%20Linguagem/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -693,17 +702,133 @@
                   
 
 
-<h1 id="introducao">Introdução</h1>
-<p>Essa documentação fala a respeito sobre o Google Colab e o Python.</p>
-<p>Alunos: </p>
+<h1 id="pandas">Pandas</h1>
+<p>O Pandas é uma biblioteca em Python projetada para análise e manipulação de dados tabulares, oferecendo estruturas de dados, sendo as principais o DataFrame e Series.
+Importando o Pandas em seu ambiente de desenvolvimento favorito, não importa qual seja.</p>
+<p>```sh
+import pandas as pd</p>
+<pre><code>Utilização da biblioteca:
+- Series: é uma estrutura unidimensional, tendo apenas um tipo de dado e armazenando dados mais simples e homogêneos. 
+```sh
+valores = [10, 25, 40, 75, 50]
+serie = pd.Series(valores)
+</code></pre>
 <ul>
-<li>Alan Paim Muller (32447680)</li>
-<li>Bruna Fabro (38358611)</li>
-<li>João Pedro Pegorini</li>
-<li>Kevin Galarza (23382783)</li>
-<li>Luan Zanon (26298716)</li>
-<li>Renan Mussatto (0256371)</li>
+<li>DataFrame: é a principal estrutura de dados do Pandas e organiza os dados em uma tabela com linhas e colunas, parecido com uma tabela de banco de dados. 
+```sh</li>
 </ul>
+<h1 id="este-dataframe-sera-usado-para-os-proximos-topicos">Este DataFrame será usado para os próximos tópicos</h1>
+<p>vendas = {
+    'Data': ['2024-05-14', '2024-05-15', '2024-05-16', '2024-05-17', '2024-05-18', '2024-05-19', '2024-05-20'],
+    'Vendas': [150, 220, None, 175, 160, 180, 250],
+    'Produto': ['A', 'B', 'C', 'D', None, 'F', 'G'],
+    'Quantidade': [10, 150, 30, None, 50, 60, 70]
+}
+df = pd.DataFrame(vendas)</p>
+<pre><code>## Operações estatísticas
+Algumas funções básicas da biblioteca permitem operações estatísticas nas estruturas de dados, entre elas:
+```sh
+# Operações baseadas na coluna Vendas
+media = df['Vendas'].mean()
+mediana = df['Vendas'].median()
+moda = df['Vendas'].mode()
+desvioPadrao = df['Vendas'].std()
+variancia = df['Vendas'].var()
+contagem = df['Vendas'].count()
+</code></pre>
+<h2 id="limpeza-e-preparacao-de-dados">Limpeza e Preparação de Dados</h2>
+<p>Preencher valores ausentes, remover linhas e valores duplicados no DataFrame.
+```sh
+df['Vendas'].fillna(160, inplace=True) # Preenche com o valor 160
+df.dropna(subset=['Produto', 'Quantidade'], inplace=True) # Remove linha com valor ausente nas colunas específicas
+df.drop_duplicates(inplace=True) # Remove valores duplicados</p>
+<pre><code>Converter a coluna 'Data' para um datetime.
+```sh
+df['Data'] = pd.to_datetime(df['Data'])
+</code></pre>
+<p>Também podemos detectar, tratar e/ou excluir outliers. 
+Neste exemplo, foi usada a técnica do IQR (Intervalo Interquartil) para a coluna 'Quantidade'.
+```sh</p>
+<h1 id="calcular-os-quartis-q1-e-q3-para-achar-o-iqr">Calcular os quartis Q1 e Q3 para achar o IQR</h1>
+<p>Q1 = df['Quantidade'].quantile(0.25)
+Q3 = df['Quantidade'].quantile(0.75)
+IQR = Q3 - Q1</p>
+<p>limiteInferior = Q1 - 1.5 * IQR
+limiteSuperior = Q3 + 1.5 * IQR</p>
+<h1 id="remover-outliers">Remover outliers</h1>
+<p>df = df[(df['Quantidade'] &gt;= limiteInferior) &amp; (df['Quantidade'] &lt;= limiteSuperior)]</p>
+<pre><code>Com a limpeza e preparação realizada, o DataFrame ficou assim:
+```sh
+print(df)
+# Output
+        Data  Vendas Produto  Quantidade
+0 2024-05-14   150.0       A        10.0
+2 2024-05-16   160.0       C        30.0
+5 2024-05-19   180.0       F        60.0
+6 2024-05-20   250.0       G        70.0
+</code></pre>
+<h2 id="leitura-e-escrita-de-dados">Leitura e Escrita de Dados</h2>
+<p>A biblioteca tem recursos para ler e escrever em dezenas de formatos diferentes, entre eles: CSV, Excel, JSON, SQL, HTML, HDF5, Parquet e muitos outros formatos.
+```sh</p>
+<h1 id="escrita-do-dataframe-do-exemplo-anterior-para-o-arquivo-vendasxlsx-suportado-pelo-excel">Escrita do DataFrame do exemplo anterior para o arquivo 'vendas.xlsx', suportado pelo Excel</h1>
+<p>df.to_excel('vendas.xlsx', index=False)</p>
+<h1 id="leitura-dos-dados-do-arquivo-vendasxlsx">Leitura dos dados do arquivo 'vendas.xlsx'</h1>
+<p>dfExcel = pd.read_excel('vendas.xlsx')</p>
+<pre><code>## Análise exploratória e visualização de dados
+Mostrar as primeiras, últimas e determinadas linhas do DataFrame.
+```sh
+print(df.head(2)) # Primeiras duas linhas
+print(df.tail(2)) # Últimas duas linhas
+print(df.loc[[0, 5], ['Produto', 'Vendas']]) # Linha 0 e Linha 5 das colunas específicas
+</code></pre>
+<p>Mostrar estatísticas descritivas das colunas numéricas.
+```sh
+print(df.describe().round(2)) # Valores com apenas duas casas após a vírgula</p>
+<h1 id="output">Output</h1>
+<pre><code>                  Data  Vendas  Quantidade
+</code></pre>
+<p>count                    4    4.00        4.00
+mean   2024-05-17 06:00:00  185.00       42.50
+min    2024-05-14 00:00:00  150.00       10.00
+25%    2024-05-15 12:00:00  157.50       25.00
+50%    2024-05-17 12:00:00  170.00       45.00
+75%    2024-05-19 06:00:00  197.50       62.50
+max    2024-05-20 00:00:00  250.00       70.00
+std                    NaN   45.09       27.54</p>
+<pre><code>Visão geral do DataFrame.
+```sh
+print(df.info()) 
+
+#Output 
+&lt;class 'pandas.core.frame.DataFrame'&gt;
+Index: 4 entries, 0 to 6
+Data columns (total 4 columns):
+ #   Column      Non-Null Count  Dtype
+---  ------      --------------  -----
+ 0   Data        4 non-null      datetime64[ns]
+ 1   Vendas      4 non-null      float64
+ 2   Produto     4 non-null      object
+ 3   Quantidade  4 non-null      float64
+dtypes: datetime64[ns](1), float64(2), object(1)
+memory usage: 160.0+ bytes
+None
+</code></pre>
+<p>Agregar dados de uma ou mais colunas.
+```sh
+print(df.agg({'Vendas': 'sum', 'Quantidade': 'sum'}))</p>
+<h1 id="output_1">Output</h1>
+<p>Vendas        740.0
+Quantidade    170.0
+dtype: float64
+`````</p>
+<h1 id="conclusao">Conclusão</h1>
+<p>Ao importar o Pandas em qualquer ambiente de desenvolvimento Python, você ganha acesso a uma ampla gama de funcionalidades para trabalhar com dados de forma rápida e eficaz.
+Além das operações básicas de criação e manipulação de dados, como a criação de Series e DataFrames, o Pandas oferece uma variedade de funções para análise estatística, limpeza e preparação de dados, leitura e escrita de dados em diferentes formatos, e análise exploratória e visualização de dados.</p>
+<p>Outras funções úteis do Pandas incluem:
+- Filtragem de dados: para selecionar dados com base em condições específicas.
+- Ordenação de dados: para ordenar os dados com base em uma ou mais colunas.
+- Operações de combinação de dados: para combinar dados de diferentes fontes usando operações como merge e join.
+- Transformação de dados: para aplicar funções de transformação aos dados, como mapeamento, aplicação de funções element-wise e aplicação de funções de agregação.</p>
 
 
 
@@ -758,10 +883,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.annotate", "content.tabs.link", "navigation.tabs", "navigation.top", "search.highlight", "search.share", "navigation.indexes"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.tabs", "navigation.top", "search.highlight", "search.share", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
     
     
-      <script src="assets/javascripts/bundle.ebd0bdb7.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ebd0bdb7.min.js"></script>
       
     
   </body>

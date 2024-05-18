@@ -9,23 +9,25 @@
       
       
       
+        <link rel="prev" href="../Seaborn/">
       
-        <link rel="next" href="Google%20Colab/">
+      
+        <link rel="next" href="../../Estruturas%20da%20Linguagem/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.23">
     
     
       
-        <title>Google Colab e Python</title>
+        <title>Sklearn - Google Colab e Python</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introducao" class="md-skip">
+        <a href="#sklearn" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -84,9 +86,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="." title="Google Colab e Python" class="md-header__button md-logo" aria-label="Google Colab e Python" data-md-component="logo">
+    <a href="../../.." title="Google Colab e Python" class="md-header__button md-logo" aria-label="Google Colab e Python" data-md-component="logo">
       
-  <img src="images/python-logo.png" alt="logo">
+  <img src="../../../images/python-logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -103,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introdução
+              Sklearn
             
           </span>
         </div>
@@ -201,11 +203,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -224,7 +224,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="Google%20Colab/" class="md-tabs__link">
+        <a href="../../../Google%20Colab/" class="md-tabs__link">
           
   
     
@@ -240,11 +240,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="Python/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
     
@@ -279,9 +281,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Google Colab e Python" class="md-nav__button md-logo" aria-label="Google Colab e Python" data-md-component="logo">
+    <a href="../../.." title="Google Colab e Python" class="md-nav__button md-logo" aria-label="Google Colab e Python" data-md-component="logo">
       
-  <img src="images/python-logo.png" alt="logo">
+  <img src="../../../images/python-logo.png" alt="logo">
 
     </a>
     Google Colab e Python
@@ -293,19 +295,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -314,7 +307,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -347,7 +339,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="Google%20Colab/" class="md-nav__link ">
+            <a href="../../../Google%20Colab/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -379,6 +371,8 @@
       
   
   
+    
+  
   
   
     
@@ -395,19 +389,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="Python/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -418,13 +415,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Python
@@ -437,8 +434,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -458,11 +457,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -476,7 +475,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Bibliotecas
@@ -490,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Python/Bibliotecas/Numpy/" class="md-nav__link">
+      <a href="../Numpy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -511,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Python/Bibliotecas/Pandas/" class="md-nav__link">
+      <a href="../Pandas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -532,7 +531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Python/Bibliotecas/Scipy/" class="md-nav__link">
+      <a href="../Scipy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -553,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Python/Bibliotecas/Seaborn/" class="md-nav__link">
+      <a href="../Seaborn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -571,10 +570,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="Python/Bibliotecas/Sklearn/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Sklearn
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -583,6 +602,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aprendizado-nao-supervisionado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aprendizado Não-Supervisionado
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -624,7 +672,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="Python/Estruturas%20da%20Linguagem/" class="md-nav__link ">
+            <a href="../../Estruturas%20da%20Linguagem/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -680,6 +728,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aprendizado-nao-supervisionado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aprendizado Não-Supervisionado
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -693,17 +758,245 @@
                   
 
 
-<h1 id="introducao">Introdução</h1>
-<p>Essa documentação fala a respeito sobre o Google Colab e o Python.</p>
-<p>Alunos: </p>
-<ul>
-<li>Alan Paim Muller (32447680)</li>
-<li>Bruna Fabro (38358611)</li>
-<li>João Pedro Pegorini</li>
-<li>Kevin Galarza (23382783)</li>
-<li>Luan Zanon (26298716)</li>
-<li>Renan Mussatto (0256371)</li>
-</ul>
+<h1 id="sklearn">Sklearn</h1>
+<p>O Scikit-learn é uma biblioteca projetada para aprendizado de máquina e mineração de dados, oferecendo ferramentas para modelagem preditiva e análise estatística.</p>
+<p>```sh
+import sklearn</p>
+<pre><code>Utilização da biblioteca:
+A Aprendizagem de máquina é dividida em duas categorias principais(Aprendizado Supervisionado e Não-Supervisionado) com cinco subcategorias totais:
+- Classificação.
+- Regressão
+- Clusterização
+- Associação (sklearn não tem algoritmos de associação, apenas a biblioteca mlxtend)
+- Sumarização
+
+## Aprendizado Supervisionado
+ Classificação: ferramentas para classificação de dados, como SVM, KNN, árvores de decisão, etc...
+```sh
+# Exemplo com KNN
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+
+# Carregar o conjunto de dados Iris
+iris = load_iris()
+X = iris.data
+y = iris.target
+
+# Dividir o conjunto de dados em conjuntos de treino e teste
+X_treino, X_teste, y_treino, y_teste = train_test_split(X, y, test_size=0.3, random_state=42)
+
+# Treinar o modelo
+knn = KNeighborsClassifier(n_neighbors=3)
+knn.fit(X_treino, y_treino)
+
+# Previsões
+previsoes = knn.predict(X_teste)
+````
+Regressão: ferramentas para regressão, como regressão linear, regressão de Ridge, regressão de Lasso, etc...
+```sh
+# Exemplo com Regressão Linear
+from sklearn.linear_model import LinearRegression
+
+# Dados de exemplo
+X = [[1], [2], [3], [4], [5]]
+y = [1.2, 2.3, 3.1, 3.9, 5.1]
+
+# Treinar o modelo
+modelo = LinearRegression()
+modelo.fit(X, y)
+
+# Previsões
+previsoes = modelo.predict([[6]])
+</code></pre>
+<h2 id="aprendizado-nao-supervisionado">Aprendizado Não-Supervisionado</h2>
+<p>Clusterização: ferramentas para clusterização de dados, como K-means, DBSCAN, e clustering hierárquico.
+```sh</p>
+<h1 id="exemplo-com-k-means">Exemplo com K-Means</h1>
+<p>from sklearn.cluster import KMeans
+import numpy as np</p>
+<h1 id="dados-de-exemplo">Dados de exemplo</h1>
+<p>X = np.array([[1, 2], [1, 4], [1, 0],
+              [10, 2], [10, 4], [10, 0]])</p>
+<h1 id="treinar-o-modelo">Treinar o modelo</h1>
+<p>kmeans = KMeans(n_clusters=2, random_state=0)
+kmeans.fit(X)</p>
+<h1 id="previsoes">Previsões</h1>
+<p>rotulos = kmeans.predict([[0, 0], [12, 3]])
+centroides = kmeans.cluster_centers_</p>
+<pre><code>Sumarização: Ferramentas para reduzir a dimensionalidade dos dados e extrair características importantes, como PCA e SVD.
+```sh
+# Exemplo com PCA
+from sklearn.decomposition import PCA
+import numpy as np
+
+# Dados de exemplo
+X = np.array([[2.5, 2.4], [0.5, 0.7], [2.2, 2.9],
+              [1.9, 2.2], [3.1, 3.0], [2.3, 2.7],
+              [2, 1.6], [1, 1.1], [1.5, 1.6], [1.1, 0.9]])
+
+# Treinar o modelo
+pca = PCA(n_components=1)
+componentes_principais = pca.fit_transform(X)
+
+# Resultados
+variancia_explicada = pca.explained_variance_ratio_
+</code></pre>
+<h2 id="pre-processamento-de-dados">Pré-processamento de Dados</h2>
+<h4 id="normalizacao-e-padronizacao">Normalização e Padronização</h4>
+<p>A normalização e padronização ajustam os valores dos dados para ficarem em uma escala comum, o que é importante para muitos algoritmos de machine learning.
+```sh
+from sklearn.preprocessing import StandardScaler, MinMaxScaler
+import numpy as np</p>
+<p>dados = np.array([[1, 2], [2, 3], [3, 4], [4, 5]])</p>
+<h1 id="padronizacao-z-score">Padronização (z-score)</h1>
+<p>padronizador = StandardScaler()
+dadosPadronizados = padronizador.fit_transform(dados)
+print(dadosPadronizados)</p>
+<h1 id="normalizacao-min-max">Normalização (min-max)</h1>
+<p>normalizador = MinMaxScaler()
+dadosNormalizados = normalizador.fit_transform(dados)
+print(dadosNormalizados)</p>
+<pre><code>#### Transformação de Recursos
+A transformação de recursos modifica os dados para melhor adaptá-los aos algoritmos de machine learning, como a criação de novas features polinomiais ou codificação one-hot.
+```sh
+from sklearn.preprocessing import PolynomialFeatures, OneHotEncoder
+import numpy as np
+
+# Dados para transformação polinomial
+dados = np.array([[2, 3], [3, 4], [4, 5]])
+
+# Transformação polinomial de grau 2
+transformadorPolinomial = PolynomialFeatures(degree=2)
+dadosPolinomiais = transformadorPolinomial.fit_transform(dados)
+print(dadosPolinomiais)
+
+# Dados para one-hot encoding
+categorias = np.array([['A'], ['B'], ['C'], ['A']])
+
+# One-hot encoding
+codificador = OneHotEncoder(sparse=False)
+categoriasCodificadas = codificador.fit_transform(categorias)
+print(categoriasCodificadas)
+</code></pre>
+<h2 id="selecao-de-modelo">Seleção de Modelo</h2>
+<h4 id="validacao-cruzada">Validação Cruzada</h4>
+<p>A validação cruzada é uma técnica para avaliar a performance de um modelo, dividindo os dados em múltiplas partes e treinando o modelo em diferentes subconjuntos dos dados.
+```sh
+from sklearn.model_selection import KFold, cross_val_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.datasets import load_iris</p>
+<h1 id="carregar-dados">Carregar dados</h1>
+<p>iris = load_iris()
+dados, rotulos = iris.data, iris.target</p>
+<h1 id="validacao-cruzada-com-kfold">Validação cruzada com KFold</h1>
+<p>kf = KFold(n_splits=5)
+modelo = LogisticRegression(max_iter=200)
+pontuacoes = cross_val_score(modelo, dados, rotulos, cv=kf)
+print(pontuacoes)</p>
+<pre><code>#### Busca de Hiperparâmetros
+A busca de hiperparâmetros ajusta os parâmetros de um modelo para encontrar a melhor combinação usando técnicas como a busca em grade.
+```sh
+from sklearn.model_selection import GridSearchCV
+from sklearn.svm import SVC
+from sklearn.datasets import load_iris
+
+# Carregar dados
+iris = load_iris()
+dados, rotulos = iris.data, iris.target
+
+# Definir parâmetros para a busca
+parametros = {'C': [0.1, 1, 10], 'kernel': ['linear', 'rbf']}
+
+# Realizar a busca
+modelo = SVC()
+buscaEmGrade = GridSearchCV(modelo, parametros, cv=5)
+buscaEmGrade.fit(dados, rotulos)
+print(buscaEmGrade.best_params_)
+</code></pre>
+<h2 id="conjunto-de-dados">Conjunto de Dados</h2>
+<h4 id="datasets-incorporados">Datasets Incorporados</h4>
+<p>A biblioteca inclui vários conjuntos de dados reais e sintéticos para testar e experimentar diferentes algoritmos de aprendizagem de máquina.
+```sh
+from sklearn.datasets import load_iris, load_digits</p>
+<h1 id="carregar-conjunto-de-dados-iris">Carregar conjunto de dados Iris</h1>
+<p>iris = load_iris()
+print(iris.data.shape)</p>
+<h1 id="carregar-conjunto-de-dados-digits">Carregar conjunto de dados Digits</h1>
+<p>digitos = load_digits()
+print(digitos.data.shape)</p>
+<pre><code>
+#### Geradores de Dados Sintéticos
+Os geradores de dados sintéticos criam conjuntos de dados artificiais que podem ser usados para testar algoritmos de machine learning.
+```sh
+from sklearn.datasets import make_classification, make_regression
+
+# Gerar dados de classificação
+dadosClassificacao, rotulosClassificacao = make_classification(n_samples=100, n_features=5)
+print(dadosClassificacao.shape, rotulosClassificacao.shape)
+
+# Gerar dados de regressão
+dadosRegressao, rotulosRegressao = make_regression(n_samples=100, n_features=5)
+print(dadosRegressao.shape, rotulosRegressao.shape)
+</code></pre>
+<h2 id="pipelines">Pipelines</h2>
+<p>Os pipelines permitem a combinação de vários passos de pré-processamento e modelagem em uma única sequência, facilitando a manutenção e a replicabilidade dos experimentos.
+```sh
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.svm import SVC
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split</p>
+<h1 id="carregar-dados_1">Carregar dados</h1>
+<p>iris = load_iris()
+dados, rotulos = iris.data, iris.target</p>
+<h1 id="dividir-os-dados-em-treino-e-teste">Dividir os dados em treino e teste</h1>
+<p>dadosTreino, dadosTeste, rotulosTreino, rotulosTeste = train_test_split(dados, rotulos, test_size=0.2, random_state=42)</p>
+<h1 id="criar-um-pipeline">Criar um pipeline</h1>
+<p>pipeline = Pipeline([
+    ('padronizador', StandardScaler()),
+    ('svm', SVC())
+])</p>
+<h1 id="treinar-o-pipeline">Treinar o pipeline</h1>
+<p>pipeline.fit(dadosTreino, rotulosTreino)</p>
+<h1 id="fazer-previsoes">Fazer previsões</h1>
+<p>previsoes = pipeline.predict(dadosTeste)
+print(previsoes)</p>
+<pre><code>## Métricas de Avaliação
+- Classificação: Acurácia, Precisão, Recall e F1-Score.
+- Regressão: Erro Quadrático Médio e Coeficiente de Determinação.
+- Clusterização: Coeficiente de Silhueta e Índice de Davies-Bouldin
+- Sumarização: Inércia e Variação Explicada
+
+## Análise de Modelos 
+#### Validação e Ajuste de Modelos
+A validação e ajuste de modelos permitem verificar a performance de um modelo para diferentes valores de hiperparâmetros, ajudando a evitar overfitting.
+```sh
+from sklearn.model_selection import validation_curve
+from sklearn.datasets import load_iris
+from sklearn.svm import SVC
+import numpy as np
+
+# Carregar dados
+iris = load_iris()
+dados, rotulos = iris.data, iris.target
+
+# Validar curva de complexidade do modelo
+parametrosIntervalo = np.logspace(-6, -1, 5)
+pontuacoesTreino, pontuacoesTeste = validation_curve(SVC(), dados, rotulos, param_name=&quot;gamma&quot;, param_range=parametrosIntervalo, cv=5)
+
+print(pontuacoesTreino)
+print(pontuacoesTeste)
+</code></pre>
+<h2 id="curvas-de-aprendizado-e-validacao">Curvas de Aprendizado e Validação</h2>
+<p>As curvas de aprendizado ajudam a entender a performance de um modelo com diferentes tamanhos de conjunto de treinamento, indicando se o modelo sofre de high bias ou high variance.
+```sh
+from sklearn.model_selection import learning_curve
+from sklearn.datasets import load_iris
+from sklearn.ensemble import RandomForestClassifier
+import matplotlib.pyplot as plt
+import numpy as np
+`````</p>
 
 
 
@@ -758,10 +1051,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.annotate", "content.tabs.link", "navigation.tabs", "navigation.top", "search.highlight", "search.share", "navigation.indexes"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.tabs", "navigation.top", "search.highlight", "search.share", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
     
     
-      <script src="assets/javascripts/bundle.ebd0bdb7.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ebd0bdb7.min.js"></script>
       
     
   </body>
