@@ -1,6 +1,10 @@
-# Requerimentos
+# Documentação Python e Google Colab.
 
-## Lista de comandos necessários para rodar o mkdocs (é necessário ter o [python](https://www.python.org/ftp/python/3.12.3/python-3.12.3-amd64.exe))
+## Exemplo da documentação
+
+Clique [aqui](https://kevingalarza6.github.io/Doc-Python-e-Google-Colab/) para acessar a versão oficial hospedada no GitHub Pages.
+
+## Lista de comandos necessários para rodar o mkdocs localmente (é necessário ter o [python](https://www.python.org/ftp/python/3.12.3/python-3.12.3-amd64.exe))
 
 No powershell, executar o comando:
 ```
