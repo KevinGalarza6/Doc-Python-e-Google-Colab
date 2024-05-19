@@ -2,9 +2,9 @@
 
 ## Exemplo da documentação
 
-Clique [aqui](https://kevingalarza6.github.io/Doc-Python-e-Google-Colab/){:target="_blank"} para acessar a versão oficial hospedada no GitHub Pages.
+Clique <a href="https://kevingalarza6.github.io/Doc-Python-e-Google-Colab/" target="_blank">aqui</a> para acessar esta documentação hospedada no GitHub Pages.
 
-## Lista de comandos necessários para rodar o mkdocs localmente (é necessário ter o [python](https://www.python.org/downloads/){:target="_blank"})
+## Lista de comandos necessários para rodar o mkdocs localmente (é necessário ter o <a href="https://www.python.org/downloads/" target="_blank">python</a>)
 
 No powershell, executar o comando:
 
