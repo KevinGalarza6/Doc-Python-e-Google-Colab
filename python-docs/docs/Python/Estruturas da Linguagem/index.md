@@ -151,6 +151,32 @@ Outros métodos para trabalhar com dicionários:
 	copia_aluno = aluno.copy()
 	print(copia_aluno)  # Saída: {'nome': 'Joao', 'idade': 22}
 
+## Tuplas
+
+As tuplas são estruturas semelhantes as listas, mas tem a característica de serem imutáveis (não
+podem ser alteradas após sua criação), e são do tipo tuple .
+As duplas são declaradas delimitadas por parênteses:
+
+```sh
+tupla = ('ab', 'cd', 'ef')
+```
+
+Para utilizar uma tupla com um único elemento deve-se colocar uma vírgula depois dele, caso
+contrário estaremos obtendo uma string:
+
+```sh
+tupla = ('ab',)
+string = ('ab')
+```
+
+Assim como nas listas, podemos acessar um valor pelo seu índice:
+
+```sh
+tupla = ('ab', 'cd', 'ef')
+print(tupla[1])
+# A saída será cd
+```
+
 ## Estruturas Condicionais
 
 Usamos estruturas condicionais para executar código específico com base em determinadas condições. A estrutura condicional mais comum é o `if`:
