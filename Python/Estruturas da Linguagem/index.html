@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.23">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
     
     
       
@@ -772,6 +772,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#tuplas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tuplas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#estruturas-condicionais" class="md-nav__link">
     <span class="md-ellipsis">
       Estruturas Condicionais
@@ -949,6 +958,22 @@ aluno = {"nome": "Joao", "idade": 22}
 copia_aluno = aluno.copy()
 print(copia_aluno)  # Saída: {'nome': 'Joao', 'idade': 22}
 </code></pre>
+<h2 id="tuplas">Tuplas</h2>
+<p>As tuplas são estruturas semelhantes as listas, mas tem a característica de serem imutáveis (não
+podem ser alteradas após sua criação), e são do tipo tuple .
+As duplas são declaradas delimitadas por parênteses:</p>
+<pre><code class="language-sh">tupla = ('ab', 'cd', 'ef')
+</code></pre>
+<p>Para utilizar uma tupla com um único elemento deve-se colocar uma vírgula depois dele, caso
+contrário estaremos obtendo uma string:</p>
+<pre><code class="language-sh">tupla = ('ab',)
+string = ('ab')
+</code></pre>
+<p>Assim como nas listas, podemos acessar um valor pelo seu índice:</p>
+<pre><code class="language-sh">tupla = ('ab', 'cd', 'ef')
+print(tupla[1])
+# A saída será cd
+</code></pre>
 <h2 id="estruturas-condicionais">Estruturas Condicionais</h2>
 <p>Usamos estruturas condicionais para executar código específico com base em determinadas condições. A estrutura condicional mais comum é o <code>if</code>:</p>
 <pre><code class="language-python">x = 10
@@ -1060,7 +1085,7 @@ while i &lt; 5:
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.tabs", "navigation.top", "search.highlight", "search.share", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ebd0bdb7.min.js"></script>
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
     
   </body>
